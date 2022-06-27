@@ -13,32 +13,51 @@
     <!-- <h1>hello</h1>
     <button onclick="alert('hello world')">hello world!</button> -->
 
+    
     <!-- header start -->
-    <header>
+    <header class="widthResize">
         <h1>Dojonary</h1>
         <input type="text" class="searchBox" placeholder="Search">
-        <button class="loginBtn">Login</button>
+        <button onclick="logout(this)" class="loginBtn">Login</button>
     </header>
     <!-- header end -->
 
 
     <!-- mainContent start -->
-    <div class="mainContent">
+    <div class="mainContent widthResize">
         <div class="col1">
             <div class="wordBox">
-                <div class="nounTitle">ninja</div>
+                <div class="nounTitle">
+                    <h1>ninja</h1>
+                    <p><em>noun</em></p>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button onclick="alert('Ninja was liked')" class="likeBtn">13 likes</button>
+                </div>
                 <div class="divDefinition">
-                    <p>A practitioner skilled in the <a href="#">Japanese</a> art of
-                        <a href="#">ninjustu</a>
+                    <p>A practitioner skilled in the <a href="#">Japanese</a>
+                        art of <a href="#">ninjustu</a>
                     </p>
                 </div>
             </div>
-            <div class="wordBox">ninja</div>
+            <div class="wordBox">
+                <div class="nounTitle">
+                    <h1>ninja</h1>
+                    <p><em>noun</em></p>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button onclick="alert('Ninja was liked')" class="likeBtn">37 likes</button>
+                </div>
+                <div class="divDefinition">
+                    <p> A <a href="#">programmer</a> who breaks down problems with
+                        <a href="#">zen</a>-like foucs
+                    </p>
+                </div>
+            </div>
+            
         </div>
         <div class="col2">
             <div class="addDefBox">
                 <p>Dojonary is <br>defined by <strong>YOU</strong></p>
-                <button class="addDef">Add Definition</button>
+                <button onclick="this.remove()" class="addDef">Add Definition</button>
             </div>
         </div>
     </div>
